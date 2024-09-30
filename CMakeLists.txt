@@ -10,12 +10,13 @@
 # Specify minimum CMake version required to compile Tudat.
 cmake_minimum_required(VERSION 3.15.0)
 
+
 # Clean CMakeList Cache
 if (EXISTS "${CMAKE_BINARY_DIR}/CMakeCache.txt")
     file(REMOVE "${CMAKE_BINARY_DIR}/CMakeCache.txt")
 endif ()
 
-# CMake configuration
+# CMake configuration 
 message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
 message(STATUS "CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
 
