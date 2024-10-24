@@ -1,22 +1,32 @@
 name: tudat-bundle
 channels:
   - conda-forge
-  - tudat-team
+  - defaults
 dependencies:
-  - eigen
+  - astropy
+  - astroquery
   - boost-cpp
-  - tudat-resources
-  - sofa-cmake
-  - nrlmsise-00
   - cspice-cmake
-  - python=3.11
+  - eigen
+  - matplotlib
+  - nrlmsise-00
+  - numpy
+  - pandas
   - pybind11
   - pybind11-abi
-  # Python dependencies
-  - numpy
   - pytest
-  - pandas     # for tudatpy.io
-  - matplotlib # for tudatpy.plotting
-  - tqdm       # for tudatpy.trajectory_design.porkchop
-  - astropy    # for tudatpy.data.mpc
-  - astroquery # for tudatpy.data.mpc
+  - python=3.11
+  - sofa-cmake
+  - tqdm
+  - tudat-resources
+  - backports
+  - backports.tarfile
+  - libblas[build=*accelerate]
+  - scipy
+  - numba
+  - pygmo
+  - sympy
+  - h5py
+  - scikit-learn
+  - pathlib
+  - mpi4py
