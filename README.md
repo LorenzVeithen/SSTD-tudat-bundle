@@ -37,16 +37,9 @@ is not tracked by Git. If the API is also built, more untracked directories will
 1. Clone the repository and enter directory
 
 ````
-git clone https://github.com/tudat-team/tudat-bundle
-cd tudat-bundle
+git clone https://github.com/LorenzVeithen/SSTD-tudat-bundle.git
+cd SSTD-tudat-bundle
 ````
-
-> **Note** \
-> The `tudat-bundle` repository uses git submodules, which "allow you to keep a Git repository as a subdirectory of 
-> another Git repository" (from [the Git guide](https://git-scm.com/book/en/v2/Git-Tools-Submodules)). In particular,
-> in the `tudat-bundle` there are four different subdirectories that are separate repositories: `tudat`, `tudatpy`,
-> `tudat-multidoc` and `tudat-multidoc/multidoc`. Each repository has its own branches and functions separately from 
-> the others. This is the reason why the following two steps are needed.
 
 2. Clone the `tudat` & `tudatpy` submodules
 
